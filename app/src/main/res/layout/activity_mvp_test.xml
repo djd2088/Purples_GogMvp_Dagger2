@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rui.xb.purple.zFunctionTest.ui.MvpTestActivity">
+
+
+    <Button
+        android:layout_marginTop="@dimen/dp_40"
+        android:id="@+id/btn_im_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我是测试按钮"
+        />
+
+</LinearLayout>

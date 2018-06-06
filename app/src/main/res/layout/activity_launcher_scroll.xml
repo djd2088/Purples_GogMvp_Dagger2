@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.bigkoo.convenientbanner.ConvenientBanner
+        android:id="@+id/banner_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.bigkoo.convenientbanner.ConvenientBanner>
+
+    <Button
+        android:id="@+id/btn_begin"
+        android:layout_width="126dp"
+        android:layout_height="35dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:text="开始体验"
+        android:background="@drawable/btn_border"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone" />
+
+</FrameLayout>

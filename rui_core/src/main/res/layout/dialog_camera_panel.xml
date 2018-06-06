@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <Button
+        android:id="@+id/btn_native_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_border_native"
+        android:gravity="center"
+        android:text="@string/native_photo"
+        android:textColor="@color/tv_black3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/transparent" />
+
+
+    <Button
+        android:id="@+id/btn_takephoto_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_border_takephoto"
+        android:gravity="center"
+        android:text="@string/take_photo"
+        android:textColor="@color/tv_black3" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/btn_cancel_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_border"
+        android:gravity="center"
+        android:text="@string/cancel_click"
+        android:textColor="@color/tv_black3" />
+
+</LinearLayout>

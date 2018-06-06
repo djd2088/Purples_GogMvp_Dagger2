@@ -1,0 +1,83 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //网络请求依赖
+    compile 'com.squareup.okio:okio:1.13.0'
+    compile 'com.squareup.okhttp3:okhttp:3.8.1'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    //Rxjava
+    compile 'io.reactivex.rxjava2:rxjava:2.1.2'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    //JSON依赖Android版
+    compile 'com.alibaba:fastjson:1.1.57.android'
+    compile 'com.google.code.gson:gson:2.3.1'
+   // 沉浸式状态栏
+    compile ('com.github.niorgai:StatusBarCompat:2.1.4', {
+        exclude group: 'com.android.support'
+    })
+
+    //    //Banner依赖
+    compile('com.bigkoo:convenientbanner:2.0.5', {
+        exclude group: 'com.android.support'
+    })
+    //Loader依赖
+    compile 'com.wang.avi:library:2.1.3'
+//    //Fragment依赖
+//    compile 'me.yokeyword:fragmentation:1.0.3'
+//    compile 'me.yokeyword:fragmentation-swipeback:1.0.3'
+    //ButterKnife依赖
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //图片加载
+    api('com.github.bumptech.glide:glide:4.7.1', { exclude group: 'com.android.support' })
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    //freshRecylcleView
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-4'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-4'//没有使用特殊Header，可以不加这行
+    api 'com.android.support:recyclerview-v7:26.1.0'
+    //adapter
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+    //rxlifecycle
+    compile 'com.trello.rxlifecycle2:rxlifecycle:2.2.1'
+    compile 'com.trello.rxlifecycle2:rxlifecycle-android:2.2.1'
+    compile 'com.trello.rxlifecycle2:rxlifecycle-components:2.2.1'
+//    //JsBridge
+    compile 'com.github.lzyzsd:jsbridge:1.0.4'
+  //  tools
+   // compile 'com.github.vondear:RxTools:v1.7.7.3'
+    //banner 2
+    compile 'com.youth.banner:banner:1.4.10'  //最新版本
+}

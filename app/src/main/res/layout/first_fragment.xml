@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+
+    <Button
+        android:id="@+id/btn_net_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="网络请求测试"
+        android:fitsSystemWindows="true"
+      />
+
+    <Button
+        android:id="@+id/btn_recycle_view_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@android:color/holo_orange_light"
+        android:text="下拉刷新/上拉加载" />
+
+    <Button
+        android:id="@+id/btn_web_view_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@android:color/holo_orange_light"
+        android:text="WebView_原生Web交互" />
+
+    <Button
+        android:id="@+id/btn_head_img_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@android:color/holo_orange_light"
+        android:text="头像处理" />
+
+
+    <Button
+        android:id="@+id/btn_mvp_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_4"
+        android:background="@android:color/holo_orange_light"
+        android:text="MVP_Test"/>
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>

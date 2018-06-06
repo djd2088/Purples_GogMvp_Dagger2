@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rui.xb.zFunctionTest.ui.NetTestActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_main"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_10"/>
+
+    <Button
+        android:id="@+id/btn_getImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击加载图片"/>
+
+    <TextView
+        android:id="@+id/tv_main"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_getMsg"
+        android:text="点击请求www.baidu.com数据"/>
+
+</LinearLayout>
