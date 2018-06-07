@@ -2,9 +2,6 @@ package com.rui.xb.purple.ui.fragment.ot;
 
 import android.graphics.drawable.Drawable;
 
-/**
- * Created by 傅令杰
- */
 
 public final class BottomTabBean {
 
